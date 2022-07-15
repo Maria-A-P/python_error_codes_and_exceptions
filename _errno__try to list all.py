@@ -39,7 +39,7 @@ for n in dict_of_errno_as_in_POSIX.keys():
     try:
         set_of_common_err_names.add(n)
     except:
-        print('smth went wrong in for n in dict_of_errno_as_in_C.keys() cycle')
+        print('smth went wrong in for n in dict_of_errno_as_in_POSIX.keys() cycle')
 for n in dict_of_errno_as_Win_sockets_err_codes.keys():
     try:
         set_of_common_err_names.add(n)
@@ -102,7 +102,7 @@ for n in sorted_list_of_common_err_names:
         value_from_dict_C = dict_of_errno_as_in_POSIX.get(n)
     except:
         print('smth was wrong')  # надо конкретизировать, где, но не буду
-    print(' '.center(field_width_for_name), "  C :".ljust(field_width_2), value_from_dict_C)
+    print(' '.center(field_width_for_name), "  POSIX :".ljust(field_width_2), value_from_dict_C)
     # -----------
     value_from_dict_WinS = "-"  # не нужно: и так возвращает None (но оставлю - мало ли что)
     try:
