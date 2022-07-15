@@ -19,10 +19,24 @@
 Затем (чтобы вывести все доступные данные из os.strerror), выводятся цифровые коды ошибок и соответствующие им данные из errno.errorcode и os.strerror
 
 ============================
+Пример (часть) вывода информации об exceptions (с помощью "_exceptions__try to list all.py"):
+============================
+```
+Warning
+<class 'Warning'>
+INSPECT_GETMODULE: <module 'builtins' (built-in)>
+INSPECT_GETDOC (mozhet tianutjsja ot roditelya): Base class for warning categories.
+INSPECT_MRO (module resolution order): (<class 'Warning'>, <class 'Exception'>, <class 'BaseException'>, <class 'object'>)
 
+ZeroDivisionError
+<class 'ZeroDivisionError'>
+INSPECT_GETMODULE: <module 'builtins' (built-in)>
+INSPECT_GETDOC (mozhet tianutjsja ot roditelya): Second argument to a division or modulo operation was zero.
+INSPECT_MRO (module resolution order): (<class 'ZeroDivisionError'>, <class 'ArithmeticError'>, <class 'Exception'>, <class 'BaseException'>, <class 'object'>)
+```
+============================
 Ниже приводится списки ошибок (вначале - с группировкой по буквенным кодам, затем - по цифровым), 
 генерируемые с помощью "_errno__try to list all.py":
-
 ============================
 
 ```
